@@ -21,8 +21,11 @@ void pause() {
 
 //MAIN
 void main(){
+	
+	for (int i = 1; i < 30; i++) {//Makes the code loop 30 times
+		
 	int n; 
-	cout << "Enter a positive 3 digit integer : ";
+	cout << "Enter a positive 3 digit integer : ";//Prints out the phrase
 	cin >> n; // 'n' is the variable that stores the three digit number that the user types in.
 
 	int a = n / 100; // Isolates the digit in the 100th's place.
@@ -30,14 +33,14 @@ void main(){
 	int c = n % 10; // Isolates the digit in the 1's place.
 
 	if (a > b && b > c) { 
-		cout << "Descending" << endl;
+		cout << n << "is Descending" << endl;
 	} // If the digits of 'n' are presented in a descending order from left to right, print 'descending'.
 	else if (a < b && b < c) {
-		cout << "Ascending" << endl;
+		cout << n << "is Ascending" << endl;
 	} // If the digits of 'n' are presented in a ascending order from left to right, print 'ascending'.
 	else {
-		cout << "Neither" << endl;
+		cout << n << "is Neither Ascending or Descending" << endl;
 	} // If the digits of 'n' aren't presented in either a descending or ascending order from left to right, print 'neither'.
-
+	}
 	pause(); // Ends function, prints "Press any key to continue..."
 }
